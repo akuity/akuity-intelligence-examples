@@ -6,27 +6,34 @@ This repository contains operational runbooks that guide Akuity Intelligence's a
 
 ### ArgoCD Application Issues
 Runbooks for health, sync, and deployment issues surfaced through Argo CD:
-- **[argocd-app-degraded.md](./argocd/argocd-app-degraded.md)** - Application health degraded with failing resources
-- **[argocd-app-out-of-sync.md](./argocd/argocd-app-out-of-sync.md)** - Applications showing out-of-sync status
-- **[argocd-app-sync-failure.md](./argocd/argocd-app-sync-failure.md)** - Sync operations failing or timing out
+- **[argocd-app-degraded.md](./runbooks/argocd/argocd-app-degraded.md)** - Application health degraded with failing resources
+- **[argocd-app-out-of-sync.md](./runbooks/argocd/argocd-app-out-of-sync.md)** - Applications showing out-of-sync status
+- **[argocd-app-sync-failure.md](./runbooks/argocd/argocd-app-sync-failure.md)** - Sync operations failing or timing out
 
 ### Infrastructure & Cluster Issues  
 Cluster-level infrastructure problems and resource constraints:
-- **[pod-pending-scheduling.md](./infra/pod-pending-scheduling.md)** - Pods stuck in pending due to scheduling constraints
-- **[pvc-binding-failure.md](./infra/pvc-binding-failure.md)** - Persistent volume claim binding failures
-- **[time-drift.md](./infra/time-drift.md)** - Time synchronization issues between cluster nodes
+- **[pod-pending-scheduling.md](./runbooks/infra/pod-pending-scheduling.md)** - Pods stuck in pending due to scheduling constraints
+- **[pvc-binding-failure.md](./runbooks/infra/pvc-binding-failure.md)** - Persistent volume claim binding failures
+- **[time-drift.md](./runbooks/infra/time-drift.md)** - Time synchronization issues between cluster nodes
 
 ### Network & Connectivity Issues
 Network dataplane and service connectivity diagnostics:
-- **[cni-networking.md](./networking/cni-networking.md)** - CNI and pod networking problems
-- **[service-connectivity.md](./networking/service-connectivity.md)** - Service discovery and connectivity failures
+- **[cni-networking.md](./runbooks/networking/cni-networking.md)** - CNI and pod networking problems
+- **[service-connectivity.md](./runbooks/networking/service-connectivity.md)** - Service discovery and connectivity failures
 
 ### Pod-Level Problems
 Per-pod reliability scenarios and runtime issues:
-- **[image-pull-failure.md](./pod-issues/image-pull-failure.md)** - Container image pull failures and registry issues
-- **[pod-evictions.md](./pod-issues/pod-evictions.md)** - Pod evictions due to resource pressure
-- **[pod-health-issues.md](./pod-issues/pod-health-issues.md)** - Pod health check failures and readiness issues
+- **[image-pull-failure.md](./runbooks/pod-issues/image-pull-failure.md)** - Container image pull failures and registry issues
+- **[pod-evictions.md](./runbooks/pod-issues/pod-evictions.md)** - Pod evictions due to resource pressure
+- **[pod-health-issues.md](./runbooks/pod-issues/pod-health-issues.md)** - Pod health check failures and readiness issues
 
 ### Security & Access Control
 Access control and policy denials that block workloads:
-- **[rbac-denials.md](./security/rbac-denials.md)** - RBAC permission denials and authorization failures
+- **[rbac-denials.md](./runbooks/security/rbac-denials.md)** - RBAC permission denials and authorization failures
+
+## Scheduled Tasks
+
+Automated tasks for monitoring platform health and security compliance:
+
+- **[platform-integrity-reports.md](./tasks/infra/platform-integrity-reports.md)** - Generates comprehensive reports on platform integrity and status
+- **[expiring-certificates.md](./tasks/security/expiring-certificates.md)** - Monitors and alerts on certificates approaching expiration
