@@ -60,30 +60,9 @@ Per-pod reliability scenarios and runtime issues:
 Access control and policy denials that block workloads:
 - **[rbac-denials.md](./runbooks/security/rbac-denials.md)** - RBAC permission denials and authorization failures
 
----
+## Scheduled Tasks
 
-## Tasks
+Automated tasks for monitoring platform health and security compliance:
 
-Tasks run automatically at defined intervals to generate reports, detect issues, and maintain platform health. Each task uses a simple frontmatter format with `title` and `schedule` fields.
-
-### ArgoCD
-Monitoring for GitOps application health and sync status:
-- **[argocd-sync-status-report.md](./tasks/argocd/argocd-sync-status-report.md)** - ArgoCD application sync status (every 6 hours)
-
-### Kargo
-Pipeline promotion and stage health monitoring:
-- **[kargo-pipeline-health.md](./tasks/kargo/kargo-pipeline-health.md)** - Kargo promotion pipeline health (every 4 hours)
-
-### Platform Health
-Comprehensive platform monitoring, resource efficiency, and incident summaries:
-- **[platform-integrity-reports.md](./tasks/platform/platform-integrity-reports.md)** - Comprehensive daily platform health report (9am)
-- **[resource-utilization-report.md](./tasks/platform/resource-utilization-report.md)** - Resource efficiency and quota analysis (Fridays 5pm)
-- **[stuck-resources-cleanup.md](./tasks/platform/stuck-resources-cleanup.md)** - Detect orphaned and stuck-in-deletion resources (7am)
-- **[weekly-incident-summary.md](./tasks/platform/weekly-incident-summary.md)** - Weekly incident and operational summary (Mondays 9am)
-- **[workload-health-report.md](./tasks/platform/workload-health-report.md)** - Workload stability and restart analysis (every 12 hours)
-- **[api-deprecation-report.md](./tasks/platform/api-deprecation-report.md)** - Kubernetes API deprecation readiness (Wednesdays 10am)
-
-### Security
-Security posture, vulnerability scanning, and certificate monitoring:
-- **[expiring-certificates.md](./tasks/security/expiring-certificates.md)** - Check for expiring or failed TLS certificates (8am)
-- **[image-vulnerability-report.md](./tasks/security/image-vulnerability-report.md)** - Container image CVE security scan (6am)
+- **[platform-integrity-reports.md](./tasks/infra/platform-integrity-reports.md)** - Generates comprehensive reports on platform integrity and status
+- **[expiring-certificates.md](./tasks/security/expiring-certificates.md)** - Monitors and alerts on certificates approaching expiration
