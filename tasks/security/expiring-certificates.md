@@ -3,6 +3,10 @@ title: Expiring Certificates Check
 schedule: "every day at 8am"
 ---
 
+Generate a summary of all expiring certificates.
+
+## Expiring Certificates
+
 - List all Certificate resources (e.g. cert-manager.io/Certificate)
 - Check the status fields of Certificate, CertificateRequest, and Order objects
 - Identify certificates in any of these states:
@@ -15,5 +19,11 @@ schedule: "every day at 8am"
   - Expiration date and time remaining
   - Current status and any error messages
   - Associated Secret name
+
+## Summary Format
+
+Present in Markdown with:
+
+- Executive summary of expiring certificates
 - Group findings by severity (critical, warning, informational)
-- Provide a concise summary in Markdown format with actionable recommendations
+- Alert for immediate action required
