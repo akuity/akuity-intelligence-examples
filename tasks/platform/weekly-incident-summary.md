@@ -32,8 +32,15 @@ Group incidents by root cause type:
 - Incidents requiring manual intervention vs auto-resolved
 - Average number of tool calls per incident resolution
 
+## Recurring Issues
+
+- Identify incidents that occurred multiple times on the same resource
+- Flag issues that have not been permanently resolved
+- Detect patterns indicating systemic problems
+
 ## Trends and Comparisons
 
+- Compare incident volume with previous weeks
 - Identify improving or degrading areas
 - Highlight successful remediation patterns
 
