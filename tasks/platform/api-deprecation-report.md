@@ -1,0 +1,43 @@
+---
+title: API Deprecation Readiness Report
+schedule: "every week on wednesday at 10am"
+---
+
+Analyze Kubernetes API deprecations to ensure cluster upgrade readiness.
+
+## Deprecated API Usage Scan
+- List all resources using deprecated Kubernetes APIs
+- Group by deprecation timeline:
+  - Removed in next minor version (critical)
+  - Removed in next major version (high)
+  - Deprecated but not yet scheduled for removal (medium)
+- Include affected resource count per API version
+
+## Impact Analysis
+For each deprecated API:
+- List of affected resources (name, namespace, kind)
+- Owning workloads or ArgoCD applications
+- Migration path (replacement API version)
+- Estimated effort to migrate
+
+## Cluster Version Context
+- Current Kubernetes version of each managed cluster
+- Target upgrade version (if known)
+- APIs that will break on upgrade
+
+## Migration Progress
+- Track resources already migrated to new APIs
+- Resources pending migration
+- Comparison with previous report
+
+## Risk Assessment
+- Clusters at highest risk for upgrade issues
+- Applications with most deprecated API usage
+- Third-party operators or Helm charts using deprecated APIs
+
+## Summary Format
+Present in Markdown with:
+- Upgrade readiness score per cluster
+- Critical deprecations requiring immediate action
+- Detailed migration checklist
+- Timeline recommendations for API updates
