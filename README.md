@@ -52,10 +52,7 @@ Pipeline promotion and stage health monitoring:
 ### Platform Health
 Comprehensive platform monitoring, resource efficiency, and incident summaries:
 - **[platform-integrity-report.md](./tasks/platform/platform-integrity-report.md)** - Comprehensive platform health report
-- **[resource-utilization-report.md](./tasks/platform/resource-utilization-report.md)** - Resource efficiency and quota analysis
-- **[stuck-resources-cleanup.md](./tasks/platform/stuck-resources-cleanup.md)** - Detect orphaned and stuck-in-deletion resources
 - **[weekly-incident-summary.md](./tasks/platform/weekly-incident-summary.md)** - Weekly incident and operational summary
-- **[workload-health-report.md](./tasks/platform/workload-health-report.md)** - Workload stability and restart analysis
 - **[api-deprecation-report.md](./tasks/platform/api-deprecation-report.md)** - Kubernetes API deprecation readiness
 
 ### Security
