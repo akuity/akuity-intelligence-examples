@@ -1,14 +1,13 @@
 ---
 title: Kargo Promotion Pipeline Health Check
-schedule: "every 4 hours"
+schedule: "every day at 9am"
 ---
 
-Monitor the health and status of Kargo promotion pipelines across all projects.
+Check the health and status of Kargo promotion pipelines across all projects.
 
 ## Project Overview
 
-- List all Kargo projects with their current status
-- Count of active stages, warehouses, and pending promotions per project
+- Check the given kargo projects and list the project name, project status, count of active stages, warehouses, and pending promotions per project
 
 ## Warehouse Status
 
