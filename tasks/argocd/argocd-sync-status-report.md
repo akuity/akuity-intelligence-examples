@@ -3,33 +3,31 @@ title: ArgoCD Application Sync Status Report
 schedule: "every day at 9am"
 ---
 
-Generate a comprehensive report on the sync status of all ArgoCD applications.
+Generate a comprehensive report on the sync status of the specified ArgoCD application.
 
-## Application Sync Overview
+## Application Overview
 
-- Provide a high-level summary of all applications and their current synchronization status.
-- Categorize applications by health status: Healthy, Degraded, Progressing, Missing, and Unknown.
+- Provide a summary of the application and its current synchronization status.
+- Report its health status: Healthy, Degraded, Progressing, Missing, or Unknown.
 
-## Out-of-Sync Applications
+## Sync Status
 
-For each OutOfSync application:
+If the application is OutOfSync:
 
-- Application name and namespace
 - Target cluster and destination namespace
 - Duration since last successful sync
 - Number of resources with drift
 - Brief summary of detected drift (resource types affected)
 
-## Failed Syncs
+## Sync History
 
 - Check recent application events or sync history to find failures (past 24 hours)
-- List applications with recent sync failures
-- Include error messages and failure reasons
-- Identify recurring sync failures (same error multiple times)
+- Include error messages and failure reasons if any
+- Identify recurring sync failures
 
 ## Health Status Details
 
-For Degraded or Progressing applications:
+If the application is Degraded or Progressing:
 
 - Identify unhealthy resources
 - Brief root cause summary if determinable
@@ -38,7 +36,6 @@ For Degraded or Progressing applications:
 ## Summary Format
 
 Present in Markdown with:
-
-- Quick stats dashboard (unsynced %, degraded %, progress %)
-- Priority list of applications requiring attention
-- Recommendations for resolving sync issues
+- Current Health and Sync Status
+- Summary of any issues (drift, sync failures, unhealthy resources)
+- Recommendations for resolving issues
