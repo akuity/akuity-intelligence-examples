@@ -1,6 +1,6 @@
 ---
 title: Expiring Certificates Check
-schedule: "every day at 8am"
+schedule: "every day at 9am"
 ---
 
 Generate a summary of all expiring certificates.
