@@ -1,7 +1,7 @@
 ---
 title: Expiring Certificates Check
 schedule: "every day at 9am"
-context_scope: cluster
+suggest contexts: instance, cluster
 ---
 
 Generate a summary of all expiring certificates.

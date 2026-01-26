@@ -1,7 +1,7 @@
 ---
 title: API Deprecation Readiness Report
 schedule: "every monday at 9am"
-context_scope: cluster
+suggest contexts: instance, cluster
 ---
 
 Analyze Kubernetes API deprecations to ensure cluster upgrade readiness.
