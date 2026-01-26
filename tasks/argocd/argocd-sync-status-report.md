@@ -1,6 +1,7 @@
 ---
 title: ArgoCD Application Sync Status Report
 schedule: "every day at 9am"
+context_scope: argocd
 ---
 
 Generate a comprehensive report on the sync status of the specified ArgoCD application.

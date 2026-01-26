@@ -1,6 +1,7 @@
 ---
 title: Daily Platform Integrity Report
 schedule: "every day at 9am"
+context_scope: instance
 ---
 
 Generate a comprehensive daily platform health report covering the following areas:

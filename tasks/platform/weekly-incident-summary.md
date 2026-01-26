@@ -1,6 +1,7 @@
 ---
 title: Weekly Incident Summary Report
 schedule: "every monday at 9am"
+context_scope: instance
 ---
 
 Generate a weekly summary of all incidents and operational events across the platform.
