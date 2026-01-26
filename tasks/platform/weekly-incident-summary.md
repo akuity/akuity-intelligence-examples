@@ -1,7 +1,7 @@
 ---
 title: Weekly Incident Summary Report
 schedule: "every monday at 9am"
-supoorted contexts: instance, cluster
+supported contexts: argo cd instance, cluster
 ---
 
 Generate a weekly summary of all incidents and operational events across the platform.

@@ -1,7 +1,7 @@
 ---
 title: Expiring Certificates Check
 schedule: "every day at 9am"
-supoorted contexts: instance, cluster
+supported contexts: argo cd instance, cluster
 ---
 
 Generate a summary of all expiring certificates.

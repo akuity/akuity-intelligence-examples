@@ -1,7 +1,7 @@
 ---
 title: API Deprecation Readiness Report
 schedule: "every monday at 9am"
-supoorted contexts: instance, cluster
+supported contexts: argo cd instance, cluster
 ---
 
 Analyze Kubernetes API deprecations to ensure cluster upgrade readiness.

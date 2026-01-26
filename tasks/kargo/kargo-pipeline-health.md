@@ -1,7 +1,7 @@
 ---
 title: Kargo Promotion Pipeline Health Check
 schedule: "every day at 9am"
-supoorted contexts: kargo
+supported contexts: kargo project
 ---
 
 Check the health and status of Kargo promotion pipelines across all projects.

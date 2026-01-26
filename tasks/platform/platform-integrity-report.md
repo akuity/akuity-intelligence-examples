@@ -1,7 +1,7 @@
 ---
 title: Daily Platform Integrity Report
 schedule: "every day at 9am"
-supoorted contexts: instance, cluster
+supported contexts: argo cd instance, cluster
 ---
 
 Generate a comprehensive daily platform health report covering the following areas:
