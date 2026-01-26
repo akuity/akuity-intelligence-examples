@@ -1,8 +1,12 @@
-# Akuity Intelligence Runbooks
+# Akuity Intelligence Examples
 
-This repository contains operational runbooks that guide Akuity Intelligence's automated incident response when it detects degraded ArgoCD Applications or Kubernetes Namespaces. Each runbook follows a structured approach with symptom identification, root cause analysis, and step-by-step remediation procedures.
+This repository contains operational runbooks and scheduled tasks that demonstrate Akuity Intelligence's capabilities for automated incident response and proactive platform monitoring.
 
-## Runbook Categories
+---
+
+## Runbooks
+
+Runbooks guide Akuity Intelligence's automated incident response when it detects degraded ArgoCD Applications or Kubernetes Namespaces. Each runbook follows a structured approach with symptom identification, root cause analysis, and step-by-step remediation procedures.
 
 ### ArgoCD Application Issues
 Runbooks for health, sync, and deployment issues surfaced through Argo CD:
@@ -31,9 +35,27 @@ Per-pod reliability scenarios and runtime issues:
 Access control and policy denials that block workloads:
 - **[rbac-denials.md](./runbooks/security/rbac-denials.md)** - RBAC permission denials and authorization failures
 
-## Scheduled Tasks
+---
 
-Automated tasks for monitoring platform health and security compliance:
+## Tasks
 
-- **[platform-integrity-reports.md](./tasks/infra/platform-integrity-reports.md)** - Generates comprehensive reports on platform integrity and status
-- **[expiring-certificates.md](./tasks/security/expiring-certificates.md)** - Monitors and alerts on certificates approaching expiration
+Tasks run automatically at defined intervals to generate reports, detect issues, and maintain platform health.
+
+### ArgoCD
+Monitoring for GitOps application health and sync status:
+- **[argocd-sync-status-report.md](./tasks/argocd/argocd-sync-status-report.md)** - ArgoCD application sync status
+
+### Kargo
+Pipeline promotion and stage health monitoring:
+- **[kargo-pipeline-health.md](./tasks/kargo/kargo-pipeline-health.md)** - Kargo promotion pipeline health
+
+### Platform Health
+Comprehensive platform monitoring, resource efficiency, and incident summaries:
+- **[platform-integrity-report.md](./tasks/platform/platform-integrity-report.md)** - Comprehensive platform health report
+- **[weekly-incident-summary.md](./tasks/platform/weekly-incident-summary.md)** - Weekly incident and operational summary
+- **[api-deprecation-report.md](./tasks/platform/api-deprecation-report.md)** - Kubernetes API deprecation readiness
+
+### Security
+Security posture, vulnerability scanning, and certificate monitoring:
+- **[expiring-certificates.md](./tasks/security/expiring-certificates.md)** - Check for expiring or failed TLS certificates
+- **[image-vulnerability-report.md](./tasks/security/image-vulnerability-report.md)** - Container image CVE security scan
