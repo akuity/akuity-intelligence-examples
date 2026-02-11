@@ -8,7 +8,7 @@ Generate a report identifying over-provisioned workloads where resource requests
 
 ## Resource Usage Analysis
 
-- Query all container resources using the list-container-resources tool
+- List all container resources
 - For each container, compare:
   - CPU request vs actual CPU usage
   - Memory request vs actual memory usage
